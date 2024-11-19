@@ -1,20 +1,26 @@
-<?php
-// create a db connection
-$connection = new Mysqli("localhost","root","","school_db");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Register new book</h1>
+        <form action="insert.php" method="POST">
+            <label for="">Book title</label>
+            <input type="text" name="title">
+            <br>
+            <br>
+            
+            <label for="">Book Author</label>
+            <input type="text" name="author">
+            <br>
+            <br>
 
-
-// inserting data into our table
-// $sql = "INSERT INTO `students`(`firstname`, `lastname`, `level`) VALUES ('KALIMA','OSCAR','LEVEL 5 SOD')";
-
-// DELETE COMMAND
-// $sql = "delete from students where firstname = 'kalima'";
-
-// UPDATE COMMAND
-// $sql = "update students set firstname = 'Peter' where id = 1";
-
-// if($connection->query($sql)){
-//     echo "query executed successfully!";
-// }else{
-//     echo "failed to execute query";
-
-// }
+            <button type="submit">save book</button>
+        </form>
+    </center>
+</body>
+</html>
